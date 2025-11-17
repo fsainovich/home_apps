@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/fsainovich/flask-deploy.git
     targetRevision: HEAD # or a specific branch/tag like 'main' or 'v1.0.0'
-    path: 
+    path: k8s/
   destination:
     server: https://kubernetes.default.svc # Or your cluster's API server URL
     namespace: flask
@@ -18,3 +18,4 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+
