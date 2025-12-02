@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/fsainovich/container-info.git
+    repoURL: https://github.com/fsainovich/container-info-deploy.git
     targetRevision: HEAD # or a specific branch/tag like 'main' or 'v1.0.0'
     path: k8s/
   destination:
