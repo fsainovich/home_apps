@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: flask
+  name: container-info
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/fsainovich/flask-deploy.git
+    repoURL: https://github.com/fsainovich/container-info.git
     targetRevision: HEAD # or a specific branch/tag like 'main' or 'v1.0.0'
     path: k8s/
   destination:
     server: https://kubernetes.default.svc # Or your cluster's API server URL
-    namespace: flask
+    namespace: container-info
   syncPolicy:
     automated:
       prune: true
